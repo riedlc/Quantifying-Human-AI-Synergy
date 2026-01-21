@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantifying Human-AI Synergy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-white text-gray-900">
+  <!-- Header -->
+  <header class="max-w-4xl mx-auto px-6 pt-16 pb-8 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Quantifying Human-AI Synergy</h1>
+    
+    <!-- Action Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-8">
+      <a href="#" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition font-medium">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Paper
+      </a>
+      <a href="https://twitter.com/intent/tweet?text=Quantifying%20Human-AI%20Synergy%20-%20A%20new%20framework%20for%20measuring%20collaboration&url=" class="inline-flex items-center gap-2 px-5 py-2.5 border border-gray-300 rounded-lg hover:bg-gray-50 transition font-medium">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Share on X
+      </a>
+      <a href="https://bsky.app/intent/compose?text=Quantifying%20Human-AI%20Synergy%20https://osf.io/preprints/psyarxiv/vbkmt_v1" class="inline-flex items-center gap-2 px-5 py-2.5 border border-gray-300 rounded-lg hover:bg-gray-50 transition font-medium">
+        <svg viewBox="0 0 600 530" width="18" height="18" fill="currentColor"><path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.72 40.255-67.24 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/></svg>
+        Bluesky
+      </a>
+    </div>
+
+    <!-- Authors -->
+    <div class="text-gray-600 mb-2">
+      <a href="https://www.christophriedl.net/" class="text-blue-600 hover:underline font-medium">Christoph Riedl</a><sup>1,2,3</sup>
+      and
+      <a href="https://www.benweidmann.org/" class="text-blue-600 hover:underline font-medium">Ben Weidmann</a><sup>4</sup>
+    </div>
+    
+    <!-- Affiliations -->
+    <div class="text-sm text-gray-500 space-y-1">
+      <p><sup>1</sup>D'Amore-McKim School of Business, <sup>2</sup>Khoury College of Computer Sciences, <sup>3</sup>Network Science Institute, Northeastern University</p>
+      <p><sup>4</sup>Social Research Institute, University College London</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 pb-16">
+
+    <!-- Figure 1 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">AI Improves Performance in Human-AI Teams</h2>
+      <div class="text-gray-700 leading-relaxed space-y-4">
+        <p>While AI benchmarks have driven remarkable model improvements, they typically evaluate models in isolation—missing how AI actually performs when collaborating with humans in real-world settings. Prior work shows substantial variation in AI's impact depending on task type, difficulty, and user skill, often with conflicting findings.</p>
+        <p>We introduce a framework for measuring human-AI synergy and use it to answer a simple question: who benefits from using AI and on which tasks? The answer isn't what you might expect. Using data from 667 participants solving reasoning tasks with and without AI assistance, we find significant synergy between humans. Even a relatively weak model (Llama-3.1-8B) combined with humans significantly outperforms humans alone. A stronger model (OpenAI GPT 4o) generates even more synergy, but the gap to the weaker model shrinks. AI acts as a cognitive amplifier on difficult tasks. While high-ability users perform best overall, lower-ability users receive the largest boost—evidence of both skill complementarity and equalizing effects. This suggests the field's current focus on solo benchmark scores may be optimizing for the wrong thing—what matters is how much smarter AI makes the human-AI team, not how smart it is on its own.</p>
+      </div>
+      <img src="fig1.png">
+      <p class="text-sm text-gray-600 italic">Human-AI teams perform substantially better than human-alone, even with the weaker Llama model. GPT-4o provides significantly higher synergy than Llama-3.1-8B (IRT estimates accounting for task difficulty and user ability; bars show 95% CIs).</p>
+    </section>
+
+    <!-- Figure 2 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">Who Benefits from AI and on Which Tasks?</h2>
+      <img src="fig2.png">
+      <p class="text-sm text-gray-600 italic">AI acts as a cognitive amplifier on difficult tasks. While high-ability users perform best overall, lower-ability users receive the largest boost—evidence of both skill complementarity and equalizing effects.</p>
+    </section>
+
+
+    <!-- Figure 3 -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">Theory of Mind Predicts Collaboration Success</h2>
+      <div class="text-gray-700 leading-relaxed space-y-4">
+        <p>What makes people good at using AI? Being good at using AI isn't primarily a technical skill involving secret hacks, keywords, and formulas. Instead, we find it's about "Theory of Mind"—the ability to infer what the AI knows and doesn't know, and to adapt your communication accordingly.
+
+        <p>Users better able to infer and adapt to others' perspectives achieve superior collaborative performance with AI. Even moment-to-moment fluctuations in perspective-taking influence AI response quality, highlighting the role of dynamic user factors in human-AI collaboration.</p>
+      </div>
+      <img src="fig3.png"  style="width: 70%; display: block; margin: 0 auto;">
+      <p class="text-sm text-gray-600 italic">Theory of Mind—the ability to reason about others' mental states—differentially predicts success when collaborating with AI but not when working alone.</p>
+    </section>
+
+    <!-- Key Findings -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">Key Findings</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 border border-gray-200">
+          <h3 class="font-semibold text-gray-900 mb-1">Significant Synergy</h3>
+          <p class="text-sm text-gray-600">GPT-4o boosts human performance by 29 percentage points; Llama-3.1-8B by 23 points</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 border border-gray-200">
+          <h3 class="font-semibold text-gray-900 mb-1">Distinct Abilities</h3>
+          <p class="text-sm text-gray-600">Individual problem-solving ability and collaborative ability with AI are separately identifiable latent traits</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 border border-gray-200">
+          <h3 class="font-semibold text-gray-900 mb-1">Theory of Mind Matters</h3>
+          <p class="text-sm text-gray-600">Users with stronger ToM achieve superior collaborative outcomes—but not when working alone</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 border border-gray-200">
+          <h3 class="font-semibold text-gray-900 mb-1">Dynamic Effects</h3>
+          <p class="text-sm text-gray-600">Moment-to-moment fluctuations in perspective-taking influence AI response quality</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citation -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4 text-gray-900">Citation</h2>
+      <div class="relative">
+        <pre id="bibtex" class="bg-gray-900 text-gray-100 rounded-lg p-4 text-sm overflow-x-auto font-mono">@article{riedl2025synergy,
+  title   = {Quantifying Human-AI Synergy},
+  author  = {Riedl, Christoph and Weidmann, Ben},
+  year    = {2025},
+  journal = {PsyArXiv preprint},
+  url     = {https://osf.io/preprints/psyarxiv/vbkmt_v1}
+}</pre>
+        <button onclick="copyBibtex()" class="absolute top-3 right-3 p-2 bg-gray-700 hover:bg-gray-600 rounded-md transition" title="Copy to clipboard">
+          <svg id="copyIcon" width="16" height="16" fill="none" stroke="#d1d5db" stroke-width="2" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          <svg id="checkIcon" class="hidden" width="16" height="16" fill="none" stroke="#4ade80" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        </button>
+        <span id="copiedMsg" class="hidden absolute top-3 right-14 text-xs text-green-400 bg-gray-800 px-2 py-1 rounded">Copied!</span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-500 pt-8 border-t border-gray-200">
+      <p>Christoph Riedl (Northeastern University) · Ben Weidmann (University College London)</p>
+    </footer>
+  </main>
+
+  <script>
+    function copyBibtex() {
+      const text = document.getElementById('bibtex').textContent;
+      navigator.clipboard.writeText(text);
+      document.getElementById('copyIcon').classList.add('hidden');
+      document.getElementById('checkIcon').classList.remove('hidden');
+      document.getElementById('copiedMsg').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('copyIcon').classList.remove('hidden');
+        document.getElementById('checkIcon').classList.add('hidden');
+        document.getElementById('copiedMsg').classList.add('hidden');
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
